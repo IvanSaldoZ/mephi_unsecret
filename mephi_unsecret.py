@@ -113,14 +113,10 @@ class UnsecretMephiProg:
         input_params_dict['committee_title_1'] = input_params_ini["GENERAL"]['committee_title_1']
         input_params_dict['committee_title_2'] = input_params_ini["GENERAL"]['committee_title_2']
         input_params_dict['committee_name'] = input_params_ini["GENERAL"]['committee_name']
-        input_params_dict['member_1'] = input_params_ini["GENERAL"]['member_1']
-        input_params_dict['member_2'] = input_params_ini["GENERAL"]['member_2']
-        input_params_dict['member_3'] = input_params_ini["GENERAL"]['member_3']
-        input_params_dict['member_4'] = input_params_ini["GENERAL"]['member_4']
-        input_params_dict['member_5'] = input_params_ini["GENERAL"]['member_5']
-        input_params_dict['member_6'] = input_params_ini["GENERAL"]['member_6']
-        input_params_dict['member_7'] = input_params_ini["GENERAL"]['member_7']
-        input_params_dict['member_8'] = input_params_ini["GENERAL"]['member_8']
+        for i in range(8):
+            member = input_params_ini["GENERAL"]['member_'+str(i+1)]
+            if member != '-':
+                input_params_dict['member_'+str(i+1)] = '___________' + member
         input_params_dict['commission_number'] = input_params_ini["GENERAL"]['commission_number']
         input_params_dict['commission_name'] = input_params_ini["GENERAL"]['commission_name']
         input_params_dict['buyer'] = input_params_ini["GENERAL"]['buyer']
