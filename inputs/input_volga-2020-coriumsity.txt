@@ -6,7 +6,7 @@
 
 [GENERAL]
 # Название статьи, презентации или иного объекта для рассекречивания
-object_name = Analysis of rare publications topics in Russian Federation compared to the Worldwide by Russian National Center of INIS IAEA ()
+object_name = Программный код CORIUMSITY для анализа радиационных характеристик расплава активной зоны и корпуса ядерного реактора
 # Авторы в родительном падеже
 authors_rod = И.С. Сальдикова, Г.В. Тихомирова, Е.В. Богдановой, П.А. Пугачева, С.Н. Рыжова, А.Д. Смирнова, М.Ю. Терновых
 
